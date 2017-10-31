@@ -154,7 +154,10 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
     },
     editBootSetup: function() {
       var that = this;
-      chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://fiddle.jshell.net/chilipeppr/uNALR/show/light/", function() {
+    //   chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://fiddle.jshell.net/chilipeppr/uNALR/show/light/", function() {
+          // http://raw.githubusercontent.com/chilipeppr/widget-editbootjavascript/master/auto-generated-widget.html
+      chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://raw.githubusercontent.com/chilipeppr/widget-editbootjavascript/master/auto-generated-widget.html", function() {
+          
         console.log("Done lazy loading edit boot jscript content");
         $("#com-chilipeppr-topbar-menu-editboot").click(that.editBoot);
       });
