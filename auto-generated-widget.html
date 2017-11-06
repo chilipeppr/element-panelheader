@@ -65,8 +65,8 @@ cprequire_test(["inline:com-chilipeppr-hdr"], function(header) {
 cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(cp, google) {
   return {
     id: "com-chilipeppr-hdr",
-    url: "http://fiddle.jshell.net/chilipeppr/7aX6x/show/light/",
-    fiddleurl: "http://jsfiddle.net/chilipeppr/7aX6x/",
+    url: "http://raw.githubusercontent.com/chilipeppr/element-panelheader/master/auto-generated-widget.html",
+    githuburl: "https://github.com/chilipeppr/element-panelheader",
     name: "Widget / Header",
     desc: "This widget is the header panel.",
     publish: null,
@@ -85,7 +85,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
       console.log(this.name + " done loading.");
     },
     setupYourWorkspaces: function() {
-    
+
       // Inject "Your Workspaces" widget
       //com-chilipeppr-widget-yourworkspaces-instance
       chilipeppr.load(
@@ -100,17 +100,17 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
               // Callback that is passed reference to the newly loaded widget
               console.log("Widget / Your Workspaces just got loaded.", myObjWidgetYourworkspaces);
               myObjWidgetYourworkspaces.init();
-              
+
               $('#mainnav .com-chilipeppr-hdr-yourws').click(function() {
               console.log("showing your workspaces");
               myObjWidgetYourworkspaces.show();
               });
-              
+
             }
           );
         }
       );
-      
+
     },
     isDebugOutputOn: false, // track on/off
     origConsole: null, // store orig console method
@@ -157,7 +157,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
     //   chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://fiddle.jshell.net/chilipeppr/uNALR/show/light/", function() {
           // http://raw.githubusercontent.com/chilipeppr/widget-editbootjavascript/master/auto-generated-widget.html
       chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://raw.githubusercontent.com/chilipeppr/widget-editbootjavascript/master/auto-generated-widget.html", function() {
-          
+
         console.log("Done lazy loading edit boot jscript content");
         $("#com-chilipeppr-topbar-menu-editboot").click(that.editBoot);
       });
@@ -238,7 +238,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
     onWsPick: function() {
       console.log("Got into onWsPick");
       // lazy load the picker
-      chilipeppr.load("#com-chilipeppr-hdr-modalbody", "http://fiddle.jshell.net/chilipeppr/8UwSX/show/light/", function() {
+      chilipeppr.load("#com-chilipeppr-hdr-modalbody", "https://raw.githubusercontent.com/quinkennedy/widget-workspace-list/master/auto-generated-widget.html", function() {
         console.log("Done lazy loading workspace picker content");
       });
     }
@@ -276,7 +276,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
         <li class=""><a target="_blank" class="hdrbar" href="https://plus.google.com/communities/104346367498010042037">G+ Community</a>
 
         </li>
-        
+
       </ul>
       <!-- <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -299,7 +299,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
 
             </li>
             <!-- <li><a id="com-chilipeppr-hdr-dd-yourws" href="javascript:">Your Workspaces</a>
-                        
+
                         </li> -->
             <li class="divider"></li>
             <li><a href="javascript:" id="com-chilipeppr-topbar-menu-editboot">Edit Boot Javascript</a>
@@ -316,7 +316,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
 
             </li>
             <!-- <li><a href="javascript:">Create New Workspace</a>
-                        
+
                         </li> -->
             <li class="divider"></li>
             <li><a href="#" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-title="Your Workspaces" data-content="Popup a dialog box to see all the workspaces that you have created and own so you can navigate easily to them." class="com-chilipeppr-hdr-yourws" href="#" data-toggle="modal" data-target="#com-chilipeppr-widget-yourworkspaces">Your Workspaces</a><li class="divider"></li>
@@ -372,7 +372,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
 <!-- Your Workspaces Modal -->
 <div id="com-chilipeppr-widget-yourworkspaces-instance"
 <!-- End Your Workspaces Modal -->
-    
+
 </body>
 
 </html>

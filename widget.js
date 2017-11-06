@@ -15,8 +15,8 @@ cprequire_test(["inline:com-chilipeppr-hdr"], function(header) {
 cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(cp, google) {
   return {
     id: "com-chilipeppr-hdr",
-    url: "http://fiddle.jshell.net/chilipeppr/7aX6x/show/light/",
-    fiddleurl: "http://jsfiddle.net/chilipeppr/7aX6x/",
+    url: "(auto fill by runme.js)",
+    githuburl: "(auto fill by runme.js)",
     name: "Widget / Header",
     desc: "This widget is the header panel.",
     publish: null,
@@ -35,7 +35,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
       console.log(this.name + " done loading.");
     },
     setupYourWorkspaces: function() {
-    
+
       // Inject "Your Workspaces" widget
       //com-chilipeppr-widget-yourworkspaces-instance
       chilipeppr.load(
@@ -50,17 +50,17 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
               // Callback that is passed reference to the newly loaded widget
               console.log("Widget / Your Workspaces just got loaded.", myObjWidgetYourworkspaces);
               myObjWidgetYourworkspaces.init();
-              
+
               $('#mainnav .com-chilipeppr-hdr-yourws').click(function() {
               console.log("showing your workspaces");
               myObjWidgetYourworkspaces.show();
               });
-              
+
             }
           );
         }
       );
-      
+
     },
     isDebugOutputOn: false, // track on/off
     origConsole: null, // store orig console method
@@ -107,7 +107,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
     //   chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://fiddle.jshell.net/chilipeppr/uNALR/show/light/", function() {
           // http://raw.githubusercontent.com/chilipeppr/widget-editbootjavascript/master/auto-generated-widget.html
       chilipeppr.load("com-chilipeppr-hdr-editbootmodalbody", "http://raw.githubusercontent.com/chilipeppr/widget-editbootjavascript/master/auto-generated-widget.html", function() {
-          
+
         console.log("Done lazy loading edit boot jscript content");
         $("#com-chilipeppr-topbar-menu-editboot").click(that.editBoot);
       });
@@ -188,7 +188,7 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
     onWsPick: function() {
       console.log("Got into onWsPick");
       // lazy load the picker
-      chilipeppr.load("#com-chilipeppr-hdr-modalbody", "http://fiddle.jshell.net/chilipeppr/8UwSX/show/light/", function() {
+      chilipeppr.load("#com-chilipeppr-hdr-modalbody", "https://raw.githubusercontent.com/quinkennedy/widget-workspace-list/master/auto-generated-widget.html", function() {
         console.log("Done lazy loading workspace picker content");
       });
     }
