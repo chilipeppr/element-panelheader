@@ -15,8 +15,8 @@ cprequire_test(["inline:com-chilipeppr-hdr"], function(header) {
 cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(cp, google) {
   return {
     id: "com-chilipeppr-hdr",
-    url: "http://fiddle.jshell.net/chilipeppr/7aX6x/show/light/",
-    fiddleurl: "http://jsfiddle.net/chilipeppr/7aX6x/",
+    url: "(auto fill by runme.js)",
+    githuburl: "(auto fill by runme.js)",
     name: "Widget / Header",
     desc: "This widget is the header panel.",
     publish: null,
