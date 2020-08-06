@@ -126,6 +126,11 @@ cpdefine("inline:com-chilipeppr-hdr", ["chilipeppr_ready", "google"], function(c
     },
     toggleConsoleLog: function() {
       this.isDebugOutputOn = !this.isDebugOutputOn;
+        
+        // let's cheat for now and just force it on
+        this.isDebugOutputOn = true;
+        console.log("DEBUG: Forcing debug output on no matter what.");
+        
       if (this.isDebugOutputOn) {
         console.log = this.origConsole;
         chilipeppr.publish("/com-chilipeppr-elem-flashmsg/flashmsg", "Debug Console Output On", "Now logging debug output to console.");
